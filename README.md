@@ -1,2 +1,3 @@
-# useful_bash
-Useful bash functions and scripts
+# Useful Bash
+
+This repository contains useful bash functions, scripts and aliases.
