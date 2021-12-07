@@ -13,3 +13,13 @@ rename2() {
         mv "$i" "${i/$1/$2}"
     done
 }
+
+
+## sort_all_bed -------
+## function to sort all bed files in the current directory
+sort_all_bed() {
+    for i in $(ls *bed); do 
+        sort -k1,1 -k2,2n $i > $i.sorted
+    done
+    rename2 bed.sorted bed
+}
