@@ -23,3 +23,9 @@ sort_all_bed() {
     done
     rename2 bed.sorted bed
 }
+
+## rm_file_content -------
+## deletes all the contents from a file without deleting the file
+rm_file_content() {
+    sed -i 's/.*//g' $1
+}
